@@ -1,0 +1,165 @@
+.reviewsSection {
+   padding: 15px 0;
+}
+.title {
+   font-size: 40px;
+   font-weight: 700;
+}
+.title > span {
+   font-weight: 300;
+}
+.reviewSlider {
+   margin-top: 60px;
+}
+.reviewSlide {
+   height: 390px !important;
+   background: #faf9f8;
+   border-radius: 15px !important;
+   display: flex !important;
+   gap: 10px;
+   align-items: center;
+   padding-left: 90px;
+}
+
+.slideCard img {
+   width: 90px;
+   height: 90px;
+}
+.slideCardHeader {
+   display: flex;
+   gap: 40px;
+}
+.slideCardPersonInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.slidePersonName {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 28px;
+   color: #000000;
+}
+.slidePersonDate {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 18px;
+   color: #a2a2a2;
+}
+.slideDescription {
+   margin-top: 50px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 23px;
+   color: #828282;
+   max-width: 480px;
+}
+.slideLine {
+   height: 279px;
+   background: #eeeeee;
+   width: 4px;
+}
+.reviewSlide > div:first-child {
+   padding-right: 30px;
+}
+.reviewSlide > div:last-child {
+   padding-left: 60px;
+}
+.reviewHeader {
+   display: flex;
+   gap: 100px;
+   align-items: center;
+}
+.headerline {
+   width: 4px;
+   height: 81px;
+   background: #faf9f8;
+}
+.headerStarContainer {
+   display: flex;
+   gap: 30px;
+}
+.headerStarContainer > img {
+   width: 40px;
+   height: 40px;
+}
+.paginationContainer {
+   display: flex;
+   margin-top: 40px;
+   gap: 10px;
+}
+.paginationContainer > button {
+   width: 43px;
+   height: 43px;
+   border-radius: 3px;
+   outline: none;
+   background: none;
+   border-width: 1px;
+   cursor: pointer;
+   border: 1px solid #b11116;
+}
+.paginationContainer > button > svg > path {
+   fill: #b11116;
+}
+@media screen and (max-width: 1400px) {
+   .title {
+      font-size: 35px;
+   }
+   .reviewSlide {
+      padding: 0px 40px;
+   }
+}
+@media screen and (max-width: 1200px) {
+   .title {
+      font-size: 30px;
+   }
+}
+@media screen and (max-width: 992px) {
+   .reviewHeader {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+   }
+   .headerline {
+      display: none;
+   }
+   .title {
+      font-size: 38px;
+   }
+   .reviewSlide > div:last-child {
+      display: none;
+   }
+   .slideLine {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .title {
+      font-size: 24px;
+   }
+   .slideCard img {
+      width: 70px;
+      height: 70px;
+   }
+   .slideDescription {
+      margin-top: 20px;
+      font-size: 14px;
+   }
+   .slidePersonName {
+      font-size: 17px;
+   }
+}
+@media screen and (max-width: 365px) {
+   .slideDescription {
+      line-height: 1.5;
+      font-size: 13px;
+   }
+   .headerStarContainer {
+      gap: 10px;
+   }
+}

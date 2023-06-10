@@ -1,0 +1,84 @@
+.coverSidebar {
+   height: 100vh;
+   width: 100vw;
+   background: #333333;
+   position: absolute;
+   top: -100vh;
+   transition: 0.7s;
+   z-index: 10;
+
+}
+.coverSidebarActive {
+   top: 0;
+   height: 100vh;
+   width: 100vw;
+   background: #333333;
+   position: absolute;
+   transition: 0.7s;
+   z-index: 10;
+}
+.sidebarContainer {
+   padding: 0px 10px;
+}
+.sidebarContainerHeader {
+   margin-top: 10px;
+}
+.logoSidebar {
+   width: 113px;
+   object-fit: cover;
+   height: 38px;
+}
+.sidebarList {
+   display: flex;
+   flex-direction: column;
+   gap: 27px;
+   color: #fff;
+   padding: 0px;
+   margin-top: 40px;
+}
+.sidebarList > a {
+   color: #fff;
+
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.sidebarPhoneNumberContainer {
+   margin-top: 60px;
+   display: flex;
+   gap: 15px;
+}
+.sidebarPhoneNumberContainer > img {
+   height: 19px;
+}
+.sidebarPhoneNumber {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 16px;
+   color: #ffffff;
+}
+.sidebarSocialLinksContainer {
+   margin-top: 50px;
+   display: flex;
+   gap: 15px;
+}
+.sidebarSocialLinksContainer > a {
+    display: block;
+   width: 50px;
+   height: 50px;
+   background: rgba(33, 33, 32, 0.2);
+   border: 1px solid rgba(68, 68, 68, 0.5);
+   backdrop-filter: blur(5px);
+   border-radius: 3px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sidebarSocialLinksContainer > a > img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}

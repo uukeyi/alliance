@@ -1,0 +1,149 @@
+#heroSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url('../../assets/imgs/hero-bg.png');
+  background-size: cover;
+  position: relative;
+}
+.title {
+  font-size: 37px;
+  font-weight: 400;
+  width: 50%;
+  text-transform: uppercase;
+  color: white;
+}
+li {
+  font: 17px;
+  color: white;
+}
+.priceContainer {
+  background: rgba(33, 33, 32, 0.5);
+  padding: 24px 24px 30px;
+  border: 1px solid rgba(68, 68, 68, 1);
+  border-radius: 7px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  gap: 60px;
+}
+.priceInput {
+  padding: 0 17px;
+  border: 1px solid rgba(68, 68, 68, 1);
+  background-color: rgba(24, 24, 23, 1);
+  border-radius: 0;
+  height: 50px;
+  width: 100%;
+  caret-color: white;
+  color: #fff;
+}
+.topInput {
+  width: 50%;
+}
+.priceInput:focus {
+  outline: none;
+}
+.wrapper {
+  padding: 60px 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.heroLine {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.right {
+  width: 40%;
+  align-self: center;
+}
+.left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 28px;
+}
+.bottomButton > button {
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  padding: 14px 0px;
+  border: 1px solid white;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.bottomButton {
+  width: 55%;
+}
+
+.rightText {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(130, 130, 130, 1);
+}
+.bottom > p > a {
+  text-decoration: underline;
+  color: rgba(130, 130, 130, 1);
+}
+.bottom > p {
+  font-size: 10px;
+  color: rgba(130, 130, 130, 1);
+  width: 40%;
+}
+.bottom {
+  display: flex;
+  gap: 37px;
+}
+@media screen and (max-width: 1400px) {
+  .heroLine {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .heroLine {
+    top: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroLine {
+    width: 90%;
+    top: 35%;
+  }
+
+  .right {
+    display: none;
+  }
+  #heroSection {
+    background-position: right;
+  }
+  .title {
+    font-size: 30px;
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+  .bottom {
+    flex-direction: column-reverse;
+  }
+  .bottom > p {
+    width: 100%;
+  }
+  .bottomButton {
+    width: 100%;
+    text-align: center;
+  }
+  .bottomButton > a {
+    display: block;
+  }
+}
+@media screen and (max-width: 460px) {
+  .heroLine {
+    top: 40%;
+  }
+}

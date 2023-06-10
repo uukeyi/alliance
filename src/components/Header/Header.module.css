@@ -1,0 +1,122 @@
+.top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.topContacts {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+}
+.topContacts a {
+   color: white;
+   margin-right: 11px;
+}
+.wrapper {
+   padding: 0 80px;
+}
+
+.bottom {
+   padding: 21px 0;
+   border-top: 1px solid rgba(69, 69, 69, 1);
+   border-bottom: 1px solid rgba(69, 69, 69, 1);
+   display: flex;
+   justify-content: space-between;
+}
+.burgerButton {
+   display: none;
+}
+.bottomContacts {
+   display: flex;
+   gap: 9px;
+}
+.bottomContacts a {
+   padding: 10px;
+
+   align-items: center;
+   display: flex;
+   border: 1px solid rgba(68, 68, 68, 0.5);
+}
+.bottomContacts > a > img {
+   width: 15px;
+   height: 15px;
+}
+.navbar {
+   display: flex;
+   gap: 28px;
+   align-items: center;
+}
+.navbar a {
+   font-size: 14px;
+}
+.rightStickActive {
+   position: absolute !important;
+   top: 15px !important;
+   left: 6px;
+   transform: rotate(45deg);
+   transition: 1s;
+   height: 3px !important;
+   border-radius: 3px !important;
+}
+.leftStickActive {
+   transform: rotate(-45deg);
+   position: absolute !important;
+   top: 10px !important;
+   right: 10px;
+   transition: 1s;
+   height: 3px !important;
+   border-radius: 3px !important;
+}
+@media screen and (max-width: 1200px) { 
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+   .navbar a {
+      font-size: 11px;
+   }
+   .navbar {
+      gap: 15px;
+   }
+}
+@media screen and (max-width: 768px) {
+   .burgerButton {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      display: block;
+      cursor: pointer;
+      z-index: 11;
+   }
+   .topContacts {
+      display: none;
+   }
+   .top {
+      border-bottom: 1px solid rgba(69, 69, 65, 1);
+   }
+   .bottom {
+      display: none;
+   }
+   .stick {
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      margin: 5px 0;
+   }
+
+   .stick:first-child {
+      margin-top: 0;
+   }
+
+   .stick:last-child {
+      margin-bottom: 0;
+      width: 17px;
+   }
+   .wrapper {
+      padding: 0px 20px;
+   }
+}

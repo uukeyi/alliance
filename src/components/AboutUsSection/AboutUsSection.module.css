@@ -1,0 +1,108 @@
+.aboutUsSection {
+  padding: 22px 0 76px;
+  background: linear-gradient(116.72deg, #d9d9d9 4.26%, rgba(217, 217, 217, 0) 66.3%);
+  position: relative;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 50%;
+}
+.title {
+  font-size: 40px;
+  font-weight: 300;
+}
+.title > span {
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.desc {
+  font-size: 21px;
+  font-weight: 400;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+}
+.bottom {
+  display: flex;
+  gap: 50px;
+}
+.cardWrapper {
+  display: flex;
+  width: 25%;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cardTitle {
+  font-size: 17px;
+  font-weight: 700;
+}
+.cardDesc {
+  font-size: 14px;
+  font-weight: 400;
+}
+.carImg {
+  position: absolute;
+  right: 0;
+}
+.imgWrapper > img {
+  width: 70px;
+  height: 70px;
+}
+@media screen and (max-width: 1200px) {
+  .carImg {
+    width: 70%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 30px;
+  }
+  .bottom  {
+    flex-wrap: wrap;
+  }
+  .cardWrapper {
+    width: 320px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carImg {
+    display: none;
+  }
+  .aboutUsSection {
+    background: white;
+  }
+  .wrapper {
+    gap: 35px;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .cardWrapper {
+    width: 100%;
+    gap: 15px;
+  }
+  .imgWrapper {
+    width: 150px;
+  }
+  .top {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+}

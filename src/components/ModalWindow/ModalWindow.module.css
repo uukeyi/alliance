@@ -1,0 +1,169 @@
+.modal {
+   display: flex;
+   position: fixed;
+   z-index: -10;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   opacity: 0;
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.4);
+   align-items: center;
+   justify-content: center;
+   transition: 0.3s;
+}
+.modalActive {
+   opacity: 1 !important;
+   z-index: 10000;
+}
+.modalWindow {
+   background: #333333;
+   width: 700px;
+   height: 450px;
+   transform: scale(0);
+   transition: 0.6s;
+   padding: 30px;
+}
+.popupCloseBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000000;
+    cursor: pointer;
+}
+.modalWindowActive {
+   transform: scale(1);
+   transition: 0.6s;
+}
+.modalTitle {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 42px;
+   text-align: center;
+   color: #ffffff;
+}
+
+.priceContainer {
+   margin-top: 40px;
+   background: rgba(33, 33, 32, 0.5);
+   padding: 24px 24px 30px;
+   border: 1px solid rgba(68, 68, 68, 1);
+   border-radius: 7px;
+   backdrop-filter: blur(20px);
+   display: flex;
+   gap: 60px;
+}
+.priceInput {
+   padding: 0 17px;
+   border: 1px solid rgba(68, 68, 68, 1);
+   background-color: rgba(24, 24, 23, 1);
+   border-radius: 0;
+   height: 50px;
+   width: 100%;
+   caret-color: white;
+   color: #fff;
+}
+.textAreaModal {
+    padding: 0px 17px;
+    border: 1px solid rgba(68, 68, 68, 1);
+    background-color: rgba(24, 24, 23, 1);
+    border-radius: 0;
+    height: 80px;
+    width: 100%;
+    caret-color: white;
+    color: #fff;
+    outline: none;
+}
+.privacyPolicy {
+    color: #828282;
+    font-size: 13px;
+}
+.topInput {
+   width: 50%;
+}
+.priceInput:focus {
+   outline: none;
+}
+.wrapper {
+   padding: 60px 0 48px;
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+}
+.heroLine {
+   position: absolute;
+   top: 45%;
+   transform: translateY(-50%);
+}
+.right {
+   width: 40%;
+   align-self: center;
+}
+.left {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.rightTitle {
+   font-size: 24px;
+   font-weight: 700;
+   color: white;
+   margin-bottom: 28px;
+}
+.bottomButton > button {
+   color: white;
+   padding: 8px 0px;
+   border: 1px solid white;
+   width: 100%;
+   display: block;
+   text-align: center;
+   background: transparent;
+   cursor: pointer;
+}
+.bottomButton {
+   width: 55%;
+}
+
+.rightText {
+   font-size: 14px;
+   font-weight: 400;
+   color: rgba(130, 130, 130, 1);
+}
+.bottom > p > a {
+   text-decoration: underline;
+   color: rgba(130, 130, 130, 1);
+}
+.bottom > p {
+   font-size: 10px;
+   color: rgba(130, 130, 130, 1);
+   width: 40%;
+}
+.bottom {
+   display: flex;
+   gap: 37px;
+}
+
+@media screen and (max-width: 768px) {
+.modalWindow {
+    width: 100%;
+}
+ }
+ @media screen and (max-width: 576px) {
+    .modalTitle {
+        font-size: 24px;
+    }
+    .privacyPolicy {
+        font-size: 10px;
+    }
+    .bottomButton {
+        width: 100%;
+    }
+    .modalWindow {
+        height: 500px;
+    }
+ }
+ 
