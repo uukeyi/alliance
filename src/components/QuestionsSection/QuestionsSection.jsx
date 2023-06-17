@@ -4,6 +4,8 @@ import arrowIcon from "../../assets/icons/arrow-icon.svg";
 
 import whatsappIcon from "../../assets/icons/whatsapp-icon.svg";
 import instagramIcon from "../../assets/icons/instagram-icon.svg";
+import whatsAppSrc from '../../assets/imgs/whatsapp.svg'
+
 import emailjs from "@emailjs/browser";
 import {
    handlePhoneInput,
@@ -112,10 +114,13 @@ const QuestionsSection = () => {
                      </p>
                      <div className={contactsIcons}>
                         <a href="https://m.vk.com/id806266562">
-                           <img src={whatsappIcon} alt="whatsapp" />
+                           <img src={whatsappIcon} alt="Vk" />
                         </a>
                         <a href="https://instagram.com/dv_alliance?igshid=MmJiY2I4NDBkZg==">
                            <img src={instagramIcon} alt="instagram" />
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=89240055050">
+                           <img alt="WhatsApp" src={whatsAppSrc} />
                         </a>
                      </div>
                      <a href="tel:89952810864" className={number}>

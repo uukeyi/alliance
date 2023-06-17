@@ -5,6 +5,7 @@ import logo from "../../assets/imgs/logo-header2.png";
 import whatsappIcon from "../../assets/icons/whatsapp-icon.svg";
 import instagramIcon from "../../assets/icons/instagram-icon.svg";
 import arrowIcon from "../../assets/icons/arrow-icon.svg";
+import whatsAppSrc from "../../assets/imgs/whatsapp.svg";
 import { Link } from "react-scroll";
 import Sidebar from "../Sidebar/Sidebar";
 import { useModal } from "../../contexts/modalContext";
@@ -71,7 +72,7 @@ const Header = () => {
                         href="#"
                         onClick={(e) => {
                            e.preventDefault();
-               
+
                            setIsModelOpen(true);
                         }}
                      >
@@ -107,9 +108,11 @@ const Header = () => {
                   </Link>
                </div>
                <div className={bottomContacts}>
-       
+                  <a href="https://api.whatsapp.com/send?phone=89240055050">
+                     <img src={whatsAppSrc} alt="Whatsapp" />
+                  </a>
                   <a href="https://m.vk.com/id806266562">
-                     <img src={whatsappIcon} alt="whatsapp" />
+                     <img src={whatsappIcon} alt="VK" />
                   </a>
                   <a href="https://instagram.com/dv_alliance?igshid=MmJiY2I4NDBkZg==">
                      <img src={instagramIcon} alt="instagram" />

@@ -25,8 +25,8 @@ const BestOffersSection = () => {
       bestOffersSection,
    } = styles;
    const cardData = [
-      { image: carImgRight1, model: "CATERPILLAR 308E2 CR", price: "300 000" },
-      { image: carImgRight2, model: "KOMATSUWA100-7", price: "1 670 000" },
+      { image: carImgRight1, model: "Caterpillar ", price: "4 000 000" },
+      { image: carImgRight2, model: "Komatsu", price: "4 200 000" },
    ];
    const { setIsModelOpen } = useModal();
    return (
@@ -43,7 +43,7 @@ const BestOffersSection = () => {
                         <div className={cardDescRight}>
                            <div className={cardDescription}>
                               <p className={cardModel}>
-                                 Maker Hinocar name Dutro
+                                 Hino
                               </p>
                               <div className={cardLine}></div>
                               <div className={cardInfo}>
@@ -58,7 +58,7 @@ const BestOffersSection = () => {
                                  <p className={cardInfoRight}> BDG-XZU334M</p>
                               </div>
                            </div>
-                           <p className={cardPrice}>2 100 000 ₽</p>
+                           <p className={cardPrice}>3 500 000 ₽</p>
                            <a
                               href="#"
                               onClick={(e) => {

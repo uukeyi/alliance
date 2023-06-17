@@ -7,6 +7,8 @@ import whatsappIcon from "../../assets/icons/whatsapp-icon.svg";
 import instagramIcon from "../../assets/icons/instagram-icon.svg";
 import { Link } from "react-scroll";
 import { useModal } from "../../contexts/modalContext";
+import whatsAppSrc from '../../assets/imgs/whatsapp.svg'
+
 const Footer = () => {
    const {
       logoImage,
@@ -16,6 +18,7 @@ const Footer = () => {
       contactsIcons,
       itemsContainer,
       contactsWrapper,
+      phoneContainer,
    } = styles;
    const { setIsModelOpen } = useModal();
    return (
@@ -51,10 +54,21 @@ const Footer = () => {
                   </div>
                </div>
                <div className={contactsWrapper}>
-                  <a href="tel:89613339797">
-                     +7 (961) 333-97-97
-                     <img src={arrowIcon} alt="arrow" />
-                  </a>
+                  <div className={phoneContainer}>
+                     <a href="tel:89952810864">
+                     +7 (995) 281-08-64
+                        <img src={arrowIcon} alt="arrow" />
+                     </a>
+                     <a href="tel:89240055050">
+                    +7 (924) 005-50-50
+                        <img src={arrowIcon} alt="arrow" />
+                     </a>
+                     <a href="tel:89613339797">
+                        +7 (961) 333-97-97
+                        <img src={arrowIcon} alt="arrow" />
+                     </a>
+                  </div>
+
                   <a
                      href="#"
                      onClick={(e) => {
@@ -67,10 +81,13 @@ const Footer = () => {
                   </a>
                   <div className={contactsIcons}>
                      <a href="https://m.vk.com/id806266562">
-                        <img src={whatsappIcon} alt="whatsapp" />
+                        <img src={whatsappIcon} alt="Vk" />
                      </a>
                      <a href="https://instagram.com/dv_alliance?igshid=MmJiY2I4NDBkZg==">
                         <img src={instagramIcon} alt="instagram" />
+                     </a>
+                     <a href="https://api.whatsapp.com/send?phone=89240055050">
+                        <img src={whatsAppSrc} alt="WhatsApp" />
                      </a>
                   </div>
                </div>

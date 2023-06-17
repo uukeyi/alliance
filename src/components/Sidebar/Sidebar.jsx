@@ -3,6 +3,7 @@ import styles from "./Sidebar.module.css";
 import logoSrc from "../../assets/imgs/logo.png";
 import { Link } from "react-scroll";
 import arrowSrc from "../../assets/imgs/sideBarArrow.png";
+import whatsAppSrc from '../../assets/imgs/whatsapp.svg'
 
 import instagramSrc from "../../assets/icons/instagram-icon.svg";
 import whatsappSrc from "../../assets/icons/whatsapp-icon.svg";
@@ -96,10 +97,13 @@ const Sidebar = ({ isActive, setIsActive }) => {
             </div>
             <div className={sidebarSocialLinksContainer}>
                <a href="https://m.vk.com/id806266562">
-                  <img src={whatsappSrc} alt="Вотсап" />
+                  <img src={whatsappSrc} alt="Вк" />
                </a>
                <a href="https://instagram.com/dv_alliance?igshid=MmJiY2I4NDBkZg==">
                   <img src={instagramSrc} alt="Инстаграм" />
+               </a>
+               <a href="https://api.whatsapp.com/send?phone=89240055050">
+                  <img src={whatsAppSrc} alt="Вотсап" />
                </a>
             </div>
          </div>
